@@ -40,14 +40,23 @@
       }
     }
 
+    // nav-menu ul wrap
     .nav-menu {
-      display: grid;
-      grid-template-columns: repeat(4, auto);
-      grid-gap: 10px;
-      list-style: none;
-      text-align: center;
       width: 60vw;
-      justify-content: end;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0 20px 0 10px;
+
+      // this way is better *** but i am not sure about the browsers compability
+      // display: grid;
+      // grid-template-columns: repeat(4, auto);
+      // grid-gap: 30px;
+      // justify-content: end;
+      // text-align: center;
+      // list-style: none;
+
       margin-right: 2rem;
     }
     // links wrap
@@ -71,3 +80,32 @@
     }
   }
 }
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .nav-menu {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-gap: 30px;
+      list-style: none;
+      text-align: center;
+      width: 60vw;
+      justify-content: end;
+      margin-right: 2rem;
+    }
+
+*/
