@@ -1,0 +1,22 @@
+// -------------------
+// --MEDIA QUERIES
+// -------------------
+//
+//
+@mixin media-sm {
+    @media screen and (max-width: 960px) {
+      @content;
+    }
+  }
+  // -------
+  @mixin media-md {
+    @media screen and (min-width: 570px) {
+      @content;
+    }
+  }
+  // -------
+  @mixin media-lg {
+    @media screen and (min-width:960px) {
+      @content;
+    }
+  }
