@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 //
 function NavBar() {
   const [click, setClick] = useState(false);
+  //  1_ related to the navbar change on scroll
+  const [navbar, setNavbar] = useState(false);
+  //
+  //
 
   const handleClick = () => setClick(!click);
   // to close mobile
@@ -14,7 +18,16 @@ function NavBar() {
 
   //
   //
-
+  // 3_ related to the navbar change on scroll
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  // 2_ related to the navbar change on scroll
+  window.addEventListener("scroll", changeBackground);
   /*
   
   
@@ -22,14 +35,12 @@ function NavBar() {
   */
   return (
     <>
-      <nav className="navbar">
+      <nav className={navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             FLUXY
           </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
+
           {/* 
           
 

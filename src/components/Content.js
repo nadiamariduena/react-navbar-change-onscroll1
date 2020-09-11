@@ -4,7 +4,7 @@ const Content = () => {
   return (
     <React.Fragment>
       <section id="top">
-        <h1>services section</h1>
+        <h1>ContenT section</h1>
 
         <div className="someText">
           <p>

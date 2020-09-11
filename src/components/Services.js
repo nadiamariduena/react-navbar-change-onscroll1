@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-const Service = () => {
+const Services = () => {
   return (
     <React.Fragment>
       <section id="top">
@@ -30,4 +31,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Services;
