@@ -8,7 +8,7 @@
 
 <br>
 
-# MY FIRST RESPONSIVE REACT PORTFOLIO
+<hr>
 
 ```javascript
 
