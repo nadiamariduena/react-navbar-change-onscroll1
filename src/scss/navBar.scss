@@ -1,6 +1,7 @@
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
- min-height: 3vh;
+  min-height: 3vh;
+  padding: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,15 +10,32 @@
   top: 0;
   z-index: 999;
 
+  // The .active class will work with the function inside the navbar component
+  .active {
+    background: linear-gradient(
+      90deg,
+      rgb(66, 2, 194) 0%,
+      rgb(0, 78, 194) 100%
+    );
+  }
+
   .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
     max-width: 1500px;
 
+    .menu-icon {
+      display: none;
+
+      .fa-bars {
+        color: #fff;
+      }
+    }
+
     .navbar-logo {
-      color: #fff;
+      color: rgb(30, 48, 202);
       justify-self: start;
       margin-left: 20px;
       cursor: pointer;
@@ -26,10 +44,6 @@
       display: flex;
       align-items: center;
       //
-      .fa-typo3 {
-        margin-left: 0.5rem;
-        font-size: 1.8rem;
-      }
     }
 
     .nav-menu {
@@ -54,23 +68,11 @@
       text-decoration: none;
       padding: 0.5rem 1rem;
       height: 100%;
-    }
 
-    .nav-links:hover {
-      border-bottom: 4px solid #fff;
-      transition: all 0.2s ease-out;
-    }
-
-    .fa-bars {
-      color: #fff;
-    }
-
-    .nav-links-mobile {
-      display: none;
-    }
-
-    .menu-icon {
-      display: none;
+      &:hover {
+        border-bottom: 4px solid #fff;
+        transition: all 0.2s ease-out;
+      }
     }
 
     @media screen and (max-width: 960px) {
@@ -91,7 +93,7 @@
       }
 
       .nav-menu.active {
-        background: #242222;
+        background: #66ff00;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -103,12 +105,11 @@
         padding: 2rem;
         width: 100%;
         display: table;
-      }
-
-      .nav-links:hover {
-        background-color: #fff;
-        color: #242424;
-        border-radius: 0;
+        &:hover {
+          color: red;
+          background-color: #fff;
+          border-radius: 0;
+        }
       }
 
       .navbar-logo {
@@ -146,13 +147,13 @@
         padding: 14px 20px;
         border: 1px solid #fff;
         transition: all 0.3s ease-out;
+        &:hover {
+          background: #fff;
+          color: #242424;
+          transition: 250ms;
+        }
       }
 
-      .nav-links-mobile:hover {
-        background: #fff;
-        color: #242424;
-        transition: 250ms;
-      }
       //
     }
   }

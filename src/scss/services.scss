@@ -1,0 +1,19 @@
+#top {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 50px 0;
+  }
+
+  .someText {
+    padding: 0 40px;
+  }
+}

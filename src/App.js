@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./components/NavBar";
+import Content from "./components/Content";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Switch>
           <Route path="/" exact />
         </Switch>
+        <Content />
       </Router>
     </>
   );

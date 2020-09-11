@@ -1,34 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
 
-/*
-
-                At a certain point you will have an error due to not defining
-                a Button component, when that happens ,go down where this line is:
-
-                       {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
-
-                       position the mouse at the end of the Button word, the mouse should be blinking 
-                       at the end on the n,
-                       
-                            <Button
-                       
-                       once its there PRESS Strg+space bar, it will open the options and
-                       you should click on the option Button with a kind of rectangle inside, if it worked
-                       You should see at the top of the file this:
-
-
-                       import { Button } from "./Button";
-
-
-
-                
-
-*/
+//
+// If you want to see the explanation of most of the functions,
+// click on the image in the readme of this project
+//
 function NavBar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true); //1 btn
 
   const handleClick = () => setClick(!click);
   // to close mobile
@@ -36,17 +14,7 @@ function NavBar() {
 
   //
   //
-  const showButton = () => {
-    //2 BTn
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
 
-  //3Btn
-  window.addEventListener("resize", showButton);
   /*
   
   
@@ -62,15 +30,22 @@ function NavBar() {
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
+          {/* 
+          
+
+
+          */}
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-
-
-
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
+            {/* 
+          
+
+          
+          */}
             <li className="nav-item">
               <Link
                 to="/services"
@@ -80,6 +55,11 @@ function NavBar() {
                 Services
               </Link>
             </li>
+            {/* 
+          
+
+
+          */}
             <li className="nav-item">
               <Link
                 to="/products"
@@ -89,22 +69,7 @@ function NavBar() {
                 Products
               </Link>
             </li>
-
-            <li>
-              <Link
-                to="/sign-up"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
           </ul>
-
-
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
-
-          
         </div>
       </nav>
     </>

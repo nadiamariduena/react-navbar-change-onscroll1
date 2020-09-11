@@ -2,6 +2,7 @@
 @import "responsive";
 @import "App";
 @import "navBar";
+@import "services";
 
 *,
 *::before,
@@ -31,10 +32,12 @@ body::-webkit-scrollbar-thumb {
 //
 :root {
   --primary: red;
+  font-size: 16px;
 }
 
 body {
   background-color: lemonchiffon;
+  overflow-x: hidden;
 }
 
 .btn {
