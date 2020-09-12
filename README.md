@@ -1,5 +1,12 @@
 ## ( in progress )
 
+<br>
+
+[<img src="./src/img/preview.gif">](https://nadiamariduena.github.io/react-responsive1/)
+
+<br>
+<br>
+
 # React Navbar Change Background Color on Scroll
 
 <p> I will continue this project based in the Navigation Bar i created here:</p>
