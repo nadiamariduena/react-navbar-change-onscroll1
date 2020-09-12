@@ -1,20 +1,23 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: #fff;
+  width: 100vw;
   height: 80px;
+  //
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  // THIS WILL show the navbar until the bottom of it, like in the dropdown menu
   z-index: 999;
+  transition: top 0.8s;
 
-  &:active {
-    background: linear-gradient(
-      90deg,
-      rgb(66, 2, 194) 0%,
-      rgb(0, 78, 194) 100%
-    );
+  // the effect of changing the color on scroll
+  &.active {
+    // top: -100px;
+    border-bottom: 2px solid #000;
+    // THIS WILL HIDE the navbar on top, like in the dropdown menu
   }
 
   .navbar-container {
@@ -24,20 +27,25 @@
     padding: 10px;
     max-width: 1500px;
 
-    .navbar-logo {
-      color: #fff;
+    .logo {
+      color: rgb(0, 0, 0);
       justify-self: start;
+      letter-spacing: 15px;
       margin-left: 20px;
       cursor: pointer;
       text-decoration: none;
       font-size: 2rem;
       display: flex;
       align-items: center;
-      //
-      .fa-typo3 {
-        margin-left: 0.5rem;
-        font-size: 1.8rem;
+      transition: 0.3s ease-in-out;
+
+      &.active {
+        color: yellow;
+        // top: -100px;
+        // border-bottom: 1px solid #000;
+        // THIS WILL HIDE the navbar on top, like in the dropdown menu
       }
+      //
     }
 
     // nav-menu ul wrap
@@ -47,13 +55,14 @@
       justify-content: flex-end;
       align-items: center;
       margin: 0 20px 0 10px;
+      list-style: none;
 
       // links wrap
       .nav-item {
         height: 80px;
         // links
         .nav-links {
-          color: #fff;
+          color: rgb(0, 0, 0);
           display: flex;
           align-items: center;
           text-decoration: none;
@@ -61,7 +70,7 @@
           height: 100%;
 
           &:hover {
-            border-bottom: 4px solid #fff;
+            border-bottom: 4px solid yellow;
             transition: all 0.2s ease-out;
           }
         }
@@ -71,6 +80,23 @@
   }
 }
 
+/* So this was the problem  &.active
+When you have something that looks like this in the
+component:
+ 
+navbar active 
+
+2 classes 
+
+you should apply it like that:
+
+.navbar {
+  background: rgb(0, 38, 255);
+  height: 80px;
+  &.active {
+    background-color: seagreen;
+  }
+  */
 /*
 
 
