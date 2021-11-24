@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-navbar-change-onscroll1/static/css/main.6a0634d6.chunk.css",
+    "main.js": "/react-navbar-change-onscroll1/static/js/main.127874f6.chunk.js",
+    "main.js.map": "/react-navbar-change-onscroll1/static/js/main.127874f6.chunk.js.map",
+    "runtime-main.js": "/react-navbar-change-onscroll1/static/js/runtime-main.c8fab59c.js",
+    "runtime-main.js.map": "/react-navbar-change-onscroll1/static/js/runtime-main.c8fab59c.js.map",
+    "static/js/2.2719bbbc.chunk.js": "/react-navbar-change-onscroll1/static/js/2.2719bbbc.chunk.js",
+    "static/js/2.2719bbbc.chunk.js.map": "/react-navbar-change-onscroll1/static/js/2.2719bbbc.chunk.js.map",
+    "index.html": "/react-navbar-change-onscroll1/index.html",
+    "precache-manifest.a6b247d491e58ba2fe58e4f3516eed98.js": "/react-navbar-change-onscroll1/precache-manifest.a6b247d491e58ba2fe58e4f3516eed98.js",
+    "service-worker.js": "/react-navbar-change-onscroll1/service-worker.js",
+    "static/css/main.6a0634d6.chunk.css.map": "/react-navbar-change-onscroll1/static/css/main.6a0634d6.chunk.css.map",
+    "static/js/2.2719bbbc.chunk.js.LICENSE.txt": "/react-navbar-change-onscroll1/static/js/2.2719bbbc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8fab59c.js",
+    "static/js/2.2719bbbc.chunk.js",
+    "static/css/main.6a0634d6.chunk.css",
+    "static/js/main.127874f6.chunk.js"
+  ]
+}
